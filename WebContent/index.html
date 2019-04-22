@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
+<style>
+input[type=text]{
+    width:50%;
+    padding:13px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:5px;
+    margin-bottom:15px;
+    resize:vertical;
+}
+
+input[type=submit] {
+    background-color:#0073e6;
+    padding:12px 20px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#0059b3;
+}
+
+.container {
+    
+    background-color:#f2f2f2;
+    border-radius:5px;
+    padding:20px;
+}
+</style>
+
+
+
+</head>
+<body>
+<h1>Dallas Public Library</h1>
+<br/>
+<ul>
+  <li> <a href="index.html" >Home</a></li>
+  <li> <a href="checkin.jsp">Check In Books</a></li>
+  <li> <a href="FineController?action=viewfine" >Fine Management</a></li>
+  <li> <a href="addBorrower.jsp">Add Borrower</a></li>
+  
+</ul>
+
+
+<br/>
+<form action="BookController" method="get">
+
+  <input type = "text" name = "searchString" placeholder="Enter keywords to search books..." required><br/><br/>
+  <input type="hidden" name="action" value="search">
+  <input type="submit" value="Search">
+</form>
+<br/>
+
+
+
+
+</form>
+</body>
+</html>
